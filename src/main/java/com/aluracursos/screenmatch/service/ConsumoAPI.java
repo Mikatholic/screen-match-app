@@ -1,6 +1,7 @@
 package com.aluracursos.screenmatch.service;
 
 import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
 
 public class ConsumoAPI {
     public String obtenerDatos(String url) {
