@@ -1,5 +1,6 @@
 package com.aluracursos.screenmatch;
 
+import com.aluracursos.screenmatch.model.DatosSerie;
 import com.aluracursos.screenmatch.service.ConsumoAPI;
 import com.aluracursos.screenmatch.service.ConvierteDatos;
 import org.springframework.boot.CommandLineRunner;
@@ -20,5 +21,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
         // var json = consumoApi.obtenerDatos("https://coffee.alexflipnote.dev/random.json");
         System.out.println(json);
         ConvierteDatos conversor = new ConvierteDatos();
+        var datos = conversor.obtenerDatos(json, DatosSerie.class);
     }
 }
