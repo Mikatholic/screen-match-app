@@ -1,10 +1,12 @@
 package com.aluracursos.screenmatch.model;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 public record DatosEpisodio(
-        String titulo,
-        Integer numeroEpisodio,
-        String evaluacion,
-        String fechaDeLanzamiento
+        @JsonAlias("Title") String titulo,
+        @JsonAlias("Episode") Integer numeroEpisodio,
+        @JsonAlias("imdbRating") String evaluacion,
+        @JsonAlias("Released") String fechaDeLanzamiento
 ) {
 
 }
