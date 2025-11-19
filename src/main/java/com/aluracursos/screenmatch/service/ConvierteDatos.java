@@ -7,6 +7,6 @@ public class ConvierteDatos implements IConvierteDatos {
 
     @Override
     public <T> T obtenerDatos(String json, Class<T> clase) {
-        return null;
+        return objectMapper.readValue(json,clase);
     }
 }
