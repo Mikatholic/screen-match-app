@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Principal {
     private Scanner teclado = new Scanner(System.in);
     private ConsumoAPI consumoApi = new ConsumoAPI();
+    private final String URL_BASE = "https://www.omdbapi.com/?t=";
+
 
     public void muestraElMenu() {
         System.out.println("Por favor escribe el nombre de la serie que deseas buscar");
