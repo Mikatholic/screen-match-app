@@ -1,4 +1,7 @@
 package com.aluracursos.screenmatch.model;
 
-public record DatosTemporadas() {
+public record DatosTemporadas(
+        Integer numero,
+        List <DatosEpisodio> episodios
+) {
 }
