@@ -33,8 +33,10 @@ public class ScreenmatchApplication implements CommandLineRunner {
         System.out.println(episodio);
 
         List<DatosTemporadas> temporadas = new ArrayList<>();
-        for (int i = 1; i < datos.totalDeTemporadas() ; i++) {
-            
+        for (int i = 1; i <= datos.totalDeTemporadas() ; i++) {
+            json = consumoApi.obtenerDatos("https://www.omdbapi.com/?t=bones&Season="+i+"&apikey=ba29c8e");
+            var datosTemporadas = conversor.obtenerDatos(json, DatosTemporadas.class);
+            temporadas.add(datosTemporadas);
         }
     }
 }
