@@ -33,5 +33,8 @@ public class ScreenmatchApplication implements CommandLineRunner {
         System.out.println(episodio);
 
         List<DatosTemporadas> datosTemporadas = new ArrayList<>();
+        for (int i = 0; i < ; i++) {
+            
+        }
     }
 }
