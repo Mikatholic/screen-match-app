@@ -38,5 +38,6 @@ public class ScreenmatchApplication implements CommandLineRunner {
             var datosTemporadas = conversor.obtenerDatos(json, DatosTemporadas.class);
             temporadas.add(datosTemporadas);
         }
+        temporadas.forEach(System.out::println);
     }
 }
