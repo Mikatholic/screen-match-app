@@ -24,7 +24,7 @@ public class ScreenmatchApplication implements CommandLineRunner {
         ConvierteDatos conversor = new ConvierteDatos();
         var datos = conversor.obtenerDatos(json, DatosSerie.class);
         System.out.println(datos);
-        json = consumoApi.obtenerDatos("https://www.omdbapi.com/?t=bones&eason=1&episode=1&apikey=ba29c8e");
+        json = consumoApi.obtenerDatos("https://www.omdbapi.com/?t=bones&Season=1&episode=1&apikey=ba29c8e");
         DatosEpisodio episodio = conversor.obtenerDatos(json, DatosEpisodio.class);
         System.out.println(episodio);
     }
