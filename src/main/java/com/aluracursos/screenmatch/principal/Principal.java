@@ -1,5 +1,7 @@
 package com.aluracursos.screenmatch.principal;
 
+import com.aluracursos.screenmatch.service.ConsumoAPI;
+
 import java.util.Scanner;
 
 public class Principal {
